@@ -4,8 +4,8 @@ MacBook keyboard and screen backlight adjust on the ambient light.
 Internally, macbook-lighter reads the following files:
 
 * /sys/devices/platform/applesmc.768/light
-* /sys/class/backlight/intel_backlight/brightness
-* /sys/class/backlight/intel_backlight/max_brightness
+* /sys/class/backlight/acpi_video0/brightness
+* /sys/class/backlight/acpi_video0/max_brightness
 * /sys/class/leds/smc::kbd_backlight/brightness
 * /sys/class/leds/smc::kbd_backlight/max_brightness
 
@@ -52,5 +52,4 @@ macbook-lighter-ambient
 
 ## Tested MacBook Versions
 
-* MacBook Pro Late 2013 (11,1)
-* Macbook Air 2012
+* MacBook Pro Mid 2014 (A1502)
