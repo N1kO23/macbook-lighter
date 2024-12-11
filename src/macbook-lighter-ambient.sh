@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-intel_dir=/sys/class/backlight/intel_backlight
+intel_dir=/sys/class/backlight/acpi_video0
 kbd_dir=/sys/class/leds/smc::kbd_backlight
 
 power_file=/sys/class/power_supply/ADP1/online
