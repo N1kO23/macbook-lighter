@@ -1,4 +1,4 @@
-# mackbook-lighter
+# MacBook-lighter
 
 MacBook keyboard and screen backlight adjust on the ambient light.
 Internally, macbook-lighter reads the following files:
@@ -8,6 +8,8 @@ Internally, macbook-lighter reads the following files:
 * /sys/class/backlight/acpi_video0/max_brightness
 * /sys/class/leds/smc::kbd_backlight/brightness
 * /sys/class/leds/smc::kbd_backlight/max_brightness
+
+**NOTE:** Some older MacBooks used intel_backlight instead of acpi_video0; for those models refer to the [original project](https://github.com/harttle/macbook-lighter) that this is based off from
 
 So you're expected to install corresponding Nvidia/Intel drivers first.
 
